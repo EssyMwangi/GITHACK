@@ -1,0 +1,83 @@
+<div class="container-fluid">
+<div class="overlay">
+    <app-search-form (searchOutput)= "searchs($event)"></app-search-form>
+    <hr>
+    <div class="container content">
+      <div class="row">
+        <div class="col-sm-4" id="imgcard">
+          <div class="userimage" >
+            <div >
+              <img src="{{user.avatar_url}}" alt="">
+            </div> 
+            <div class="card-header">
+                <span  class="card-header-title" class="name"><i class="fa fa-user" style="font-size:20px"></i> &nbsp;{{user.login}}</span> 
+                <span><a href="{{user.html_url}}"> <br><br><hr> <button class="btn-success btn btn-lg"><i  class="icon is-medium" class="fa fa-github" ><span>  GITHUB</span></i>  </button></a> </span>
+            </div>
+          </div>
+          </div>
+        <div class="col-sm-7 user">
+          <div class="cardtopme" class="card" appHighlight>
+            <div class="card-body">
+              <h4 class="card-header">{{user.login}}</h4>
+              <p><i class="fa fa-file-code-o" class="card-content" style="font-size:18px"></i> Repositories: <span class="follow">{{user.public_repos}}</span></p>
+              <hr>
+              <p> <i class="fa fa-users" class="card-content" style="font-size:18px"></i> Following: <span class="follow">{{user.following}}</span></p>
+              <hr>
+              <p> <i class="fa fa-users" class="card-content" style="font-size:18px"></i> Followers: <span class="follow">{{user.followers}}</span></p>
+              <hr>
+              <p><i class="fa fa-clock-o" class="card-content" style="font-size:18px"></i> On Github Since: <span class="datejoined">{{user.created_at | datePipe}}</span></p>
+              <hr>
+            
+            </div>
+          </div>  
+        </div>
+      </div> 
+    </div>
+   
+    
+    <div class="text-center repos" id="reps">
+        <h2>Repositories</h2>
+      </div>
+    <div class="container allrepos">
+      <div class="card" appHighlight *ngFor="let repository of repo" style="width: 22rem;" class="repo">
+        <div class="card-body" >
+          <div class="card-header">
+            <h5 class="card-header-title"><span class="top"></span> {{repository.name}} </h5>
+          </div>
+          <div class="card-content">
+            <hr>
+            <div class="desc"><span>Description:</span> {{repository.description}} 
+            </div>
+            <hr>
+            <div class="card-subtitle mb-2">
+                <span class="top">Language: </span> {{repository.language}}
+            </div>
+            <div class="card-subtitle mb-2"><span class="top" class="fa fa-clock-o" >  Created On:</span> {{repository.created_at | date }} <hr> {{repository.created_at | datePipe}}
+            </div>
+          </div>
+          </div>
+          <div class="card-footer">
+            <div class="card-footer-item"class="btn-group" role="group" aria-label="Third group">
+              <button class=" button is-rounded btn btn-md btn-info"><i class="fa fa-eye" style="font-size:16px"></i> &nbsp;<span class="forks">{{repository.watchers_count}}</span></button>
+            </div>
+            <div class="card-footer-item" class="btn-group" role="group" aria-label="Third group">
+              <button class=" button is-rounded btn btn-md btn-outline-danger"><i class="fa fa-code-fork" style="font-size:16px"></i> &nbsp;<span class="forks">{{repository.forks}}</span></button>
+            </div>
+            <div class="card-footer-item" class="btn-group" role="group" aria-label="Third group">
+              <button class=" button is-rounded btn btn-md button is-primary" id="visit"><a href="{{repository.html_url}}" class="card-link">SEE REPO &nbsp; <i class="fa fa-file-code-o" style="font-size:16px"></i></a> </button> 
+            </div>
+            
+          </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>GITHACK</strong> by <a href="#">ESSY MUTHONI MWANGI</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. 
+        </p>
+      </div>
+    </footer>
+</div>
+</div>
+

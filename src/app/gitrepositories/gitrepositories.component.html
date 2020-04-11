@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <app-search-form (searchOutput)= "repoSearch($event)"></app-search-form>
+    <div class="container">
+        <div class="container allrepos">
+            <div class="card" appHighlight *ngFor="let repository of repo" style="width: 22rem;" class="repo">
+              <div class="card-body">
+                <h5 class="card-title">Repo Name: &nbsp;{{repository.name}} </h5>
+                <div class="card-text">
+                  <hr>
+                  <div class="desc"><span class="top">Description:</span> &nbsp;{{repository.description}} 
+                  </div>
+                  <hr>
+                  <div class="card-subtitle mb-2">
+                      <span class="top">Language: </span> {{repository.language}}
+                  </div>
+                  <div class="card-subtitle mb-2"><span class="top">Created On:</span> &nbsp;{{repository.created_at | date}}</div>
+                </div>
+                </div>
+                <div class="card-footer">
+                  <div class="btn-group" role="group" aria-label="Third group">
+                    <button class="button is-rounded btn btn-md button is-success is-light"><i class="fa fa-eye" style="font-size:16px"></i> {{repository.watchers_count}}</button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Third group">
+                    <button class="button is-rounded btn btn-md btn-outline-success is-light"><i class="fa fa-code-fork" style="font-size:16px"></i> {{repository.forks}}</button>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="Third group">
+                    <button class="button is-rounded btn btn-md button is-primary" id="visit"><a href="{{repository.html_url}}" class="card-link">SEE REPO <i class="fa fa-arrow-circle-right" style="font-size:16px"></i></a> </button> 
+                  </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>GITHACK</strong> by <a href="#">ESSY MUTHONI MWANGI</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. 
+        </p>
+      </div>
+    </footer>
+</div>

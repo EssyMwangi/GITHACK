@@ -1,0 +1,62 @@
+.overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top:1%;
+  color: white;
+
+}
+img{
+  width: 100%;
+
+}
+
+.repo{
+  
+ 
+  margin-bottom: 2%;
+  border-radius: 4px; 
+  
+}
+
+
+p{
+  font-size: 18px;
+}
+.name{
+  font-size: 18px;
+}
+.btn{
+  margin-top: -1%;
+  float: right;
+}
+.allrepos{
+  font-family: 'Lustria', serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+hr{
+  background-color: rgb(10, 219, 104);
+  height: 1px;
+}
+.desc{
+  min-height: 95px;
+}
+.top{
+  font-weight: bold;
+}
+.btn-group{
+  margin-left: 13px;
+}
+
+
+.follow{
+  border-radius: 50%;
+
+  padding: 1%;
+  float: right;
+  margin-right: 20%;
+}
+.datejoined{
+  float: right;
+  margin-right: 14%;
+}
