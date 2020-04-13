@@ -19,7 +19,7 @@ export class GituserserviceService {
   
 
   constructor(private http: HttpClient) {
-    this.foundUser = new Gitusers("","","","",0,0,0,"",new Date);
+    this.foundUser = new Gitusers("","","","",0,0,0,0,"",new Date);
     this.allRepos = new Gitrepositories("","","",new Date,0,0,"");
   }
 
@@ -31,6 +31,7 @@ export class GituserserviceService {
       html_url:string;
       location:string
       public_repos:number;
+      public_gists:number;
       followers:number;
       following:number;
       avatar_url:string;

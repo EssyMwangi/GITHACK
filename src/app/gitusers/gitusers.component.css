@@ -21,8 +21,9 @@ img{
 p{
   font-size: 18px;
 }
-.name{
+.card-header-title{
   font-size: 18px;
+  
 }
 .btn{
   margin-top: -1%;
@@ -54,9 +55,12 @@ hr{
 
   padding: 1%;
   float: right;
-  margin-right: 20%;
+ 
 }
 .datejoined{
   float: right;
-  margin-right: 14%;
+
+}
+.footer-fluid{
+  color: grey;
 }
