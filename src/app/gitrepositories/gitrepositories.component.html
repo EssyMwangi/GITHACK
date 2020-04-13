@@ -26,16 +26,13 @@
                       aria-label="Third group"
                     >
                       <button
-                        class="button is-rounded btn btn-md button is-success"
+                        class="button is-rounded btn btn-lg button is-success"
                         id="visit"
                       >
                         <a href="{{ repository.html_url }}" class="card-link"
-                          >SEE REPO
-                          <i
-                            class="fa fa-file-code-o"
-                            style="font-size: 16px;"
-                          ></i
-                        ></a>
+                          >
+                          <i class="far fa-file-code" style="font-size: 20px"><span class="rtext">REPO</span></i
+                        ></a>  
                       </button>
                     </div>
                   </div>
@@ -47,13 +44,10 @@
                     </div>
                     <hr />
                     <div class="card-subtitle mb-2">
-                      <span class="top">Language: </span>
-                      {{ repository.language }}
+                      <span class="top">Language: </span> {{ repository.language }}
                     </div>
                     <div class="card-subtitle mb-2">
-                      <span class="top" class="fa fa-clock-o">
-                        Created On:</span
-                      >
+                      <span class="top" class="fa fa-clock-o"> Created On:</span>
                       {{ repository.created_at | date }}
                       <hr />
                       {{ repository.created_at | datePipe }}
@@ -67,11 +61,11 @@
                     role="group"
                     aria-label="Third group"
                   >
-                    <button class="button is-rounded btn btn-md btn-info">
-                      <i class="fa fa-eye" style="font-size: 16px;"></i>
-                      &nbsp;<span class="forks">{{
-                        repository.watchers_count
-                      }}</span>
+                    <button class="button is-rounded btn btn-lg btn-info">
+                      <i class="fa fa-eye" style="font-size: 16px;"></i> &nbsp;<span
+                        class="forks" 
+                        >{{ repository.watchers_count }}</span
+                      >
                     </button>
                   </div>
                   <div
@@ -80,8 +74,9 @@
                     role="group"
                     aria-label="Third group"
                   >
-                    <button class="button is-rounded btn btn-md btn-danger">
-                      <i class="fa fa-code-fork" style="font-size: 16px;"></i>
+                    <button class="button is-rounded btn btn-lg btn-danger">
+                      <i class="fas fa-code-branch" style="font-size: 16px;"></i>
+                      
                       &nbsp;<span class="forks">{{ repository.forks }}</span>
                     </button>
                   </div>
