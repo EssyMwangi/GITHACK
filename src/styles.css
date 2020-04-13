@@ -1,12 +1,10 @@
-
 @import "~bootstrap/dist/css/bootstrap.css";
-@import url('https://use.fontawesome.com/c3ee6e3458.css');
+@import url("https://use.fontawesome.com/c3ee6e3458.css");
 
-body{
+body {
   background-image: url(./assets/photo-of-swiss-cheese-plant-2736497.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
