@@ -14,7 +14,7 @@ A website where users may enter a GitHub username into a form, submit it, and se
 This project was generated with [Angular CLI] https://github.com/angular/angular-cli/  version 9.0.7.
 
 ## Screenshot
-<img src= "" width="900px" height="440px">
+<img src= "https://user-images.githubusercontent.com/44394821/79118305-3cfcfa80-7d96-11ea-8697-f0cf40d3deba.png" width="900px" height="440px">
 
 
 ## Development server
