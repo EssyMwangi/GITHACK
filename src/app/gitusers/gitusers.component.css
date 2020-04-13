@@ -61,6 +61,9 @@ hr{
   float: right;
 
 }
+
 .footer-fluid{
-  color: grey;
+  color: whitesmoke;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }

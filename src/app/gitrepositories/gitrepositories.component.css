@@ -1,0 +1,55 @@
+.overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top:1%;
+  color: white;
+
+}
+
+
+.repo{
+  
+ 
+  margin-bottom: 2%;
+  border-radius: 4px; 
+  
+}
+
+
+p{
+  font-size: 18px;
+}
+.card-header-title{
+  font-size: 18px;
+  
+}
+.btn{
+  margin-top: -1%;
+  float: right;
+}
+.allrepos{
+  font-family: 'Lustria', serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+hr{
+  background-color: rgb(10, 219, 104);
+  height: 1px;
+}
+.desc{
+  min-height: 95px;
+}
+.top{
+  font-weight: bold;
+}
+.btn-group{
+  margin-left: 13px;
+}
+
+
+
+.footer-fluid{
+  color: whitesmoke;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
