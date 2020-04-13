@@ -1,57 +1,106 @@
 <div class="container-fluid">
   <div class="overlay">
-    <app-search-form (searchOutput)= "repoSearch($event)"></app-search-form>
-    <hr>
+    <app-search-form (searchOutput)="repoSearch($event)"></app-search-form>
+    <hr />
     <div class="container">
       <div class="container allrepos">
         <div class="row">
           <div class="col-md-12">
             <div class="container allrepos">
-              <div class="card" appHighlight *ngFor="let repository of repo" style="width: 22rem;" class="repo">
-                <div class="card-body" >
+              <div
+                class="card"
+                appHighlight
+                *ngFor="let repository of repo"
+                style="width: 22rem;"
+                class="repo"
+              >
+                <div class="card-body">
                   <div class="card-header">
-                    <h5 class="card-header-title"><span class="top"></span> {{repository.name}} </h5> 
-                    <div class="card-footer-item" class="btn-group" role="group" aria-label="Third group">
-                      <button class=" button is-rounded btn btn-md button is-success" id="visit"><a href="{{repository.html_url}}" class="card-link">SEE REPO <i class="fa fa-file-code-o" style="font-size:16px"></i></a> </button> 
+                    <h5 class="card-header-title">
+                      <span class="top"></span> {{ repository.name }}
+                    </h5>
+                    <div
+                      class="card-footer-item"
+                      class="btn-group"
+                      role="group"
+                      aria-label="Third group"
+                    >
+                      <button
+                        class="button is-rounded btn btn-md button is-success"
+                        id="visit"
+                      >
+                        <a href="{{ repository.html_url }}" class="card-link"
+                          >SEE REPO
+                          <i
+                            class="fa fa-file-code-o"
+                            style="font-size: 16px;"
+                          ></i
+                        ></a>
+                      </button>
                     </div>
                   </div>
-                  <div class="card-content" >
-                    <hr>
-                    <div class="card-subtitle mb-2" class="desc"><span  class="top">Repository Description:</span> 
-                      {{repository.description}} 
+                  <div class="card-content">
+                    <hr />
+                    <div class="card-subtitle mb-2" class="desc">
+                      <span class="top">Repository Description:</span>
+                      {{ repository.description }}
                     </div>
-                    <hr>
+                    <hr />
                     <div class="card-subtitle mb-2">
-                        <span class="top">Language: </span> {{repository.language}}
+                      <span class="top">Language: </span>
+                      {{ repository.language }}
                     </div>
-                    <div class="card-subtitle mb-2"><span class="top" class="fa fa-clock-o" >  Created On:</span> {{repository.created_at | date }} <hr> {{repository.created_at | datePipe}}
-                    </div>
-                  </div>
-                  </div>
-                  <div class="card-footer">
-                    <div class="card-footer-item"class="btn-group" role="group" aria-label="Third group">
-                      <button class=" button is-rounded btn btn-md btn-info"><i class="fa fa-eye" style="font-size:16px"></i> &nbsp;<span class="forks">{{repository.watchers_count}}</span></button>
-                    </div>
-                    <div class="card-footer-item" class="btn-group" role="group" aria-label="Third group">
-                      <button class=" button is-rounded btn btn-md btn-danger"><i class="fa fa-code-fork" style="font-size:16px"></i> &nbsp;<span class="forks">{{repository.forks}}</span></button>
+                    <div class="card-subtitle mb-2">
+                      <span class="top" class="fa fa-clock-o">
+                        Created On:</span
+                      >
+                      {{ repository.created_at | date }}
+                      <hr />
+                      {{ repository.created_at | datePipe }}
                     </div>
                   </div>
+                </div>
+                <div class="card-footer">
+                  <div
+                    class="card-footer-item"
+                    class="btn-group"
+                    role="group"
+                    aria-label="Third group"
+                  >
+                    <button class="button is-rounded btn btn-md btn-info">
+                      <i class="fa fa-eye" style="font-size: 16px;"></i>
+                      &nbsp;<span class="forks">{{
+                        repository.watchers_count
+                      }}</span>
+                    </button>
+                  </div>
+                  <div
+                    class="card-footer-item"
+                    class="btn-group"
+                    role="group"
+                    aria-label="Third group"
+                  >
+                    <button class="button is-rounded btn btn-md btn-danger">
+                      <i class="fa fa-code-fork" style="font-size: 16px;"></i>
+                      &nbsp;<span class="forks">{{ repository.forks }}</span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
-  </div>
-  <footer class="footer-fluid">
-    <div class="content has-text-centered">
-      <p>
-        GITHACK by <a href="https://github.com/EssyMwangi">ESSY MUTHONI MWANGI</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. 
-      </p>
+      </div>
+      <footer class="footer-fluid">
+        <div class="content has-text-centered">
+          <p>
+            GITHACK by
+            <a href="https://github.com/EssyMwangi">ESSY MUTHONI MWANGI</a>. The
+            source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+          </p>
+        </div>
+      </footer>
     </div>
-  </footer>
-  
-</div>
   </div>
 </div>
-

@@ -1,68 +1,58 @@
-.overlay{
+.overlay {
   background-color: rgba(0, 0, 0, 0.3);
-  margin-top:1%;
+  margin-top: 1%;
   color: white;
-
 }
-img{
+img {
   width: 100%;
-
 }
 
-.repo{
-  
- 
+.repo {
   margin-bottom: 2%;
-  border-radius: 4px; 
-  
+  border-radius: 4px;
 }
 
-
-p{
+p {
   font-size: 18px;
 }
-.card-header-title{
+.card-header-title {
   font-size: 18px;
-  
 }
-.btn{
+.btn {
   margin-top: -1%;
   float: right;
 }
-.allrepos{
-  font-family: 'Lustria', serif;
+.allrepos {
+  font-family: "Lustria", serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-hr{
+hr {
   background-color: rgb(10, 219, 104);
   height: 1px;
 }
-.desc{
+.desc {
   min-height: 95px;
 }
-.top{
+.top {
   font-weight: bold;
 }
-.btn-group{
+.btn-group {
   margin-left: 13px;
 }
 
-
-.follow{
+.follow {
   border-radius: 50%;
 
   padding: 1%;
   float: right;
- 
 }
-.datejoined{
+.datejoined {
   float: right;
-
 }
 
-.footer-fluid{
+.footer-fluid {
   color: whitesmoke;
   padding-top: 5%;
   padding-bottom: 5%;
