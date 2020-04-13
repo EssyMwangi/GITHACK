@@ -16,6 +16,7 @@ import { HighlightDirective } from './highlight.directive';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { HighlightDirective } from './highlight.directive';
     SearchFormComponent,
     DatePipePipe,
     NotFoundComponent,
-    HighlightDirective
+    HighlightDirective,
+
   ],
   imports: [
     BrowserModule,
