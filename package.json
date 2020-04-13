@@ -22,6 +22,7 @@
     "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^4.4.1",
     "bulma": "^0.8.1",
+    "mdbootstrap": "^4.15.0",
     "popper": "^1.0.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

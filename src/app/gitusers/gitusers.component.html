@@ -12,7 +12,7 @@
               <p>
                 <i
                   class="card-content"
-                  class="fa fa-file-code-o"
+                  class="fa fa-folder"
                   style="font-size: 18px;"
                 ></i>
                 Repositories:
@@ -41,7 +41,7 @@
               <p>
                 <i
                   class="card-content"
-                  class="fa fa-clock-o"
+                  class="fa fa-calendar"
                   style="font-size: 18px;"
                 ></i>
                 Since:
@@ -69,8 +69,8 @@
                 ><a href="{{ user.html_url }}">
                   <br />
                   <button class="btn-success btn btn-lg">
-                    <i class="icon is-large" class="fa fa-github"
-                      ><span> GITHUB</span></i
+                    <i class="icon is-large" class="fab fa-github"
+                      ><span class="gtext"> GITHUB</span></i
                     >
                   </button></a
                 >
@@ -107,13 +107,13 @@
               aria-label="Third group"
             >
               <button
-                class="button is-rounded btn btn-md button is-success"
+                class="button is-rounded btn btn-lg button is-success"
                 id="visit"
               >
                 <a href="{{ repository.html_url }}" class="card-link"
-                  >SEE REPO
-                  <i class="fa fa-file-code-o" style="font-size: 16px;"></i
-                ></a>
+                  >
+                  <i class="far fa-file-code" style="font-size: 20px"><span class="rtext">REPO</span></i
+                ></a>  
               </button>
             </div>
           </div>
@@ -142,7 +142,7 @@
             role="group"
             aria-label="Third group"
           >
-            <button class="button is-rounded btn btn-md btn-info">
+            <button class="button is-rounded btn btn-lg btn-info">
               <i class="fa fa-eye" style="font-size: 16px;"></i> &nbsp;<span
                 class="forks" 
                 >{{ repository.watchers_count }}</span
@@ -155,8 +155,9 @@
             role="group"
             aria-label="Third group"
           >
-            <button class="button is-rounded btn btn-md btn-danger">
-              <i class="fa fa-code-fork"  style="font-size: 16px;"></i>
+            <button class="button is-rounded btn btn-lg btn-danger">
+              <i class="fas fa-code-branch" style="font-size: 16px;"></i>
+              
               &nbsp;<span class="forks">{{ repository.forks }}</span>
             </button>
           </div>
