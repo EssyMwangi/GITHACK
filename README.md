@@ -16,6 +16,11 @@ This project was generated with [Angular CLI] https://github.com/angular/angular
 ## Screenshot
 <img src= "https://user-images.githubusercontent.com/44394821/79118305-3cfcfa80-7d96-11ea-8697-f0cf40d3deba.png" width="900px" height="440px">
 
+## BDD ##
+| Behavior                  | Input                     | Output                    |
+| ------------------------- | ------------------------- | ------------------------- |
+| Search for a github profile |Enter the username of the github User name | Displays the name, username, number of repositories,Joining date, followers, following and lists the repos  |
+
 
 ## Development server
 
